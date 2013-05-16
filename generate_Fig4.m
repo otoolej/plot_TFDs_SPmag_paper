@@ -93,7 +93,6 @@ imagesc(f_tfd,n,tfd(:,k_tfd)); axis xy;
 
 
 ylim([0 20]);
-% $$$ set(gca,'XTick',[0 4 8 12 16 20]);
 set(gca,'YTick',[0 5 10 15 20]);
 set(gca,'TickLength',[0.001, 0.025]);
 
