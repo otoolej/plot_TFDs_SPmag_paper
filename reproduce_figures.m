@@ -31,11 +31,24 @@ load_paths_all;
 
 switch fig_num
   case 1
-    generate_Fig1;
+    if( exist('octave_config_info') )
+        disp('Figs. 1 and 2 cannot be generated with Octave (Matlab only).');
+        return;
+    end
+    generate_Fig1('a');     
+    generate_Fig1('b');
+    generate_Fig1('c');    
   case 2
-    generate_Fig2;
+    if( exist('octave_config_info') )
+        disp('Figs. 1 and 2 cannot be generated with Octave (Matlab only).');
+        return;
+    end
+    generate_Fig2('a');     
+    generate_Fig2('b');
   case 3
-    generate_Fig3;
+    generate_Fig3('a');     
+    generate_Fig3('b');
+    generate_Fig3('c');    
   case 4
     generate_Fig4;
   case 5

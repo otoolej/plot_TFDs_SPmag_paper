@@ -38,11 +38,10 @@ b=load('speech_sample_TFD_enhanced.mat');
 tfd=b.tfd_enhanced; Fs=b.Fs;
 
 
-
 %---------------------------------------------------------------------
 % and plot:
 %---------------------------------------------------------------------
-figure(30); clf;
+figure(10); clf;
 tfd=tfd./max(tfd(:));
 vtfd(10*log10(thres(tfd,0)),[],Fs);
 
@@ -53,6 +52,6 @@ set(gca,'XTick',[0:2000:upper_freq_limit]);
 % need to re-scale axis as have decimated TFD (to reduce size):
 set(gca,'YtickLabel', [get(gca,'Ytick').*40]+0.2); 
 
-ylabel_font('Time (secs)',FONT_TYPE,FONT_SIZE);
-xlabel_font('Frequency (Hz)',FONT_TYPE,FONT_SIZE);
+ylabel('Time (secs)','FontName',FONT_TYPE,'FontSize',FONT_SIZE);
+xlabel('Frequency (Hz)','FontName',FONT_TYPE,'FontSize',FONT_SIZE);
 set(gca,'FontName',FONT_TYPE,'FontSize',FONT_SIZE);    

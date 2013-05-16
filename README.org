@@ -1,10 +1,11 @@
-#+TITLE: Reproducing Time-Frequency Plots for 'Time-frequency processing of non-stationary signals to aid diagnosis', IEEE Signal Processing Magazine, 2013
+#+TITLE: Reproducing Time-Frequency Plots for Paper: 'Time-frequency processing of non-stationary signals to aid diagnosis', IEEE Signal Processing Magazine, 2013
 # 
 #
 # started: 16-May-2013
 
 * Overview
-  This collection of M-files (computer code) generate the figures in reference [1].  
+  This collection of M-files (computer code) generate the figures in reference [1].
+  Matlab or Octave (programming environments) are required.
 
 ** files:
    - reproduce_figures.m :: main function to generate the plots
@@ -12,17 +13,20 @@
    - generate_FigX.m :: file to generate Fig. X (either: 1,2,3,4, or 5) only
 
 ** directories:
-   - data/ :: contains Matlab files (.mat) with the short epochs of biomedical signals.
+   - data/ :: contains Matlab files (.mat) with short epochs of biomedical signals.
    - fastTFDs_v0.23/ :: contains files to efficiently generate time-frequency distributions
    - IF_est/ :: contains code to estimate the instantaneous frequency of the signal
-   - PLED_IFest/ :: contains code to again estimate the instantaneous frequency,
-     but this time specifically for epileptiform discharges;
-   - utils/ :: contains a collection of extra files needed by the other code.
+   - PLED_IFest/ :: contains code to again estimate the instantaneous frequency, but this
+                    time specifically for epileptiform discharges;
+   - utils/ :: miscellaneous files.
 
 * Requirements
   Either Matlab (R2012 or newer, http://www.mathworks.co.uk/products/matlab/) or Octave
   (v3.6 or newer, http://www.gnu.org/software/octave/index.html, with the 'octave-signal'
-  add-on package).  In addition, some figures require the 'time-frequency signal afrequent (TFSA)' package, available for free download at http://time-frequency.net/.
+  add-on package).  In addition, some figures require the 'time-frequency signal analysis
+  (TFSA)' package, available for free download at http://time-frequency.net/. (Please note
+  however that Figs. 1. and 2. cannot be generated with Octave (Matlab only), as these
+  figures require the TFSA package.)
 
 * Start 
   To reproduce the figures, open Matlab (or Octave) and run as follows:

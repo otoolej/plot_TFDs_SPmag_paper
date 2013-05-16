@@ -45,7 +45,7 @@ x=b.x(1:1024); Fs=b.Fs;
 %---------------------------------------------------------------------
 tf_orig=gen_TFD_EEG(x,Fs,Ntime);
 
-figure(1); clf;
+figure(9); clf;
 v_tfd90(tf_orig,x,Fs,lower_freq_limit,upper_freq_limit,FONT_TYPE,FONT_SIZE);
 set(gca,'xlim',[0,4])
 set(gca,'XTick',[0 1 2 3 4]);

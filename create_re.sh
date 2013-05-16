@@ -9,8 +9,8 @@ fi
 
 RELEASE="$1";
 
-LONG_DIR='/home/otoolej/deusto/reports/papers/co_author/SPmag_TF_apps/mfiles_code_figs/';
-NEW_DIR=${LONG_DIR}/releases/fastTFDs_v;
+LONG_DIR='/home/otoolej/deusto/reports/papers/co_author/SPmag_TF_apps/mfiles_code/';
+NEW_DIR=${LONG_DIR}/releases/reproduce_TFD_figures_v;
 NEW_DIR=${NEW_DIR}${RELEASE}
 
 
@@ -30,8 +30,9 @@ git tag "release_v$RELEASE"
 
 
 # 3. copy all to new direction and clean-up
-cp -R * ${NEW_DIR}/
+cp -pR * ${NEW_DIR}/
 rm -f ${NEW_DIR}/notes.org
-rm -f ${NEW_DIR}/create_release.sh
-rm -f ${NEW_DIR}/ChangeLog.sh
+rm -f ${NEW_DIR}/create_re.sh
+rm -f ${NEW_DIR}/README.org
 rm -rf ${NEW_DIR}/.git
+rm -f ${NEW_DIR}/utils/copy_files_across.sh

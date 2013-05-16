@@ -1,9 +1,9 @@
-	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-		  REPRODUCING TIME-FREQUENCY PLOTS FOR
+	  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+	      REPRODUCING TIME-FREQUENCY PLOTS FOR THE PAPER:
 	      'TIME-FREQUENCY PROCESSING OF NON-STATIONARY
 		 SIGNALS TO AID DIAGNOSIS', IEEE SIGNAL
 		       PROCESSING MAGAZINE, 2013
-	   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 Table of Contents
@@ -21,14 +21,18 @@ Table of Contents
 8 Contact
 
 
+
 1 Overview
 ══════════
+
   This collection of M-files (computer code) generate the figures in
-  reference [1].
+  reference [1].  Matlab or Octave (programming environments) are
+  required.
 
 
 1.1 files:
 ──────────
+
   reproduce_figures.m: main function to generate the plots
   load_paths_all.m: loads all sub-directories into the path
   generate_FigX.m: file to generate Fig. X (either: 1,2,3,4, or 5) only
@@ -36,7 +40,8 @@ Table of Contents
 
 1.2 directories:
 ────────────────
-  data/: contains Matlab files (.mat) with the short epochs of biomedical
+
+  data/: contains Matlab files (.mat) with short epochs of biomedical
          signals.
   fastTFDs_v0.23/: contains files to efficiently generate time-frequency
                    distributions
@@ -45,21 +50,25 @@ Table of Contents
   PLED_IFest/: contains code to again estimate the instantaneous
                frequency, but this time specifically for epileptiform
                discharges;
-  utils/: contains a collection of extra files needed by the other code.
+  utils/: miscellaneous files.
 
 
 2 Requirements
 ══════════════
+
   Either Matlab (R2012 or newer,
   [http://www.mathworks.co.uk/products/matlab/]) or Octave (v3.6 or
   newer, [http://www.gnu.org/software/octave/index.html], with the
   'octave-signal' add-on package).  In addition, some figures require
-  the 'time-frequency signal afrequent (TFSA)' package, available for
-  free download at [http://time-frequency.net/].
+  the 'time-frequency signal analysis (TFSA)' package, available for
+  free download at [http://time-frequency.net/]. (Please note however
+  that Figs. 1. and 2. cannot be generated with Octave (Matlab only), as
+  these figures require the TFSA package.)
 
 
 3 Start
 ═══════
+
   To reproduce the figures, open Matlab (or Octave) and run as follows:
 
   >> reproduce_figures(1);
@@ -73,12 +82,14 @@ Table of Contents
 
 4 Version
 ═════════
+
   ⁃ Version: 0.1
   ⁃ Last update [2013-05-16 Thu].
 
 
 5 Copyright
 ═══════════
+
   Copyright (c) 2013 John M. O' Toole, University College Cork All
   rights reserved.  Email: j.otoole@ieee.org
 
@@ -109,6 +120,7 @@ Table of Contents
 
 6 Test computer setup
 ═════════════════════
+
   • hardware: Intel(R) Xeon(R) CPU @ 2.80GHz; 8GB RAM.
   • operating system: Ubuntu GNU/Linux x86_64 distribution (Raring,
     13.04), with Linux kernel 3.5.0-28-generic
@@ -119,6 +131,7 @@ Table of Contents
 
 7 References
 ════════════
+
   [1] B. Boashash, A. Ghazem, J.M. O' Toole, Time-frequency processing
   of non-stationary signals to aid diagnosis: highlights from medical
   applications, IEEE Signal Processing Magazine, 2013, in press
@@ -126,6 +139,7 @@ Table of Contents
 
 8 Contact
 ═════════
+
   • John M. O' Toole,
   • Neonatal Brain Research Group, Department of Paediatrics and Child
     Health, University College Dublin, Western Gateway Building, Room
@@ -134,3 +148,7 @@ Table of Contents
 
 
 
+Footnotes
+─────────
+
+[1] DEFINITION NOT FOUND.

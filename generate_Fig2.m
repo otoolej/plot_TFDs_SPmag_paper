@@ -56,7 +56,7 @@ switch a_or_b
     
     f_scale=2*Nfreq/Fs;
 
-    figure(1); clf; hold on;
+    figure(4); clf; hold on;
     if_law1=filt_if_law(cplist{1}(:,1)./f_scale,Fs,10);
     if_law2=filt_if_law(cplist{2}(:,1)./f_scale,Fs,10);
     if_law3=filt_if_law(cplist{3}(:,1)./f_scale,Fs,10);    
@@ -70,8 +70,8 @@ switch a_or_b
     xlim([0 180]); ylim([0 0.2])    
     set(gca,'ytick',[0:0.04:0.2]);
     set(gca,'xtick',[0:40:180]);    
-    xlabel_font('Time (secs)',FONT_TYPE,FONT_SIZE);
-    ylabel_font('Frequency (Hz)',FONT_TYPE,FONT_SIZE);
+    xlabel('Time (secs)','FontName',FONT_TYPE,'FontSize',FONT_SIZE);
+    ylabel('Frequency (Hz)','FontName',FONT_TYPE,'FontSize',FONT_SIZE);
     set(gca,'FontName',FONT_TYPE,'FontSize',FONT_SIZE);    
     
 
@@ -101,7 +101,7 @@ switch a_or_b
     % segments. A disconnection can be seen in the plot.
 
         
-    figure(2); clf; hold on;
+    figure(5); clf; hold on;
     for n=1:length(cplist)
         if_smooth=filt_if_law(cplist{n}(:,1)./f_scale,Fs);
 
@@ -110,8 +110,8 @@ switch a_or_b
     xlim([0 20]); ylim([0 5]);
     set(gca,'ytick',[0:1:5]);
     set(gca,'xtick',[0:4:20]);    
-    xlabel_font('Time (secs)',FONT_TYPE,FONT_SIZE);
-    ylabel_font('Frequency (Hz)',FONT_TYPE,FONT_SIZE);
+    xlabel('Time (secs)','FontName',FONT_TYPE,'FontSize',FONT_SIZE);
+    ylabel('Frequency (Hz)','FontName',FONT_TYPE,'FontSize',FONT_SIZE);
     set(gca,'FontName',FONT_TYPE,'FontSize',FONT_SIZE);    
     
     view(90,-90);
