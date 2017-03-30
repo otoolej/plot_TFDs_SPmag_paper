@@ -13,9 +13,11 @@
 % Example:
 %     generate_Fig5;
 %
-% [1] B. Boashash, A. Ghazem, J.M. O' Toole, Time-frequency processing of non-stationary
-% signals to aid diagnosis: highlights from medical applications, IEEE Signal Processing
-% Magazine, 2013, in press
+% [1] B. Boashash, G. Azemi, and J.M. O’ Toole, “Time–frequency processing of nonstationary
+% signals: advanced TFD design to aid diagnosis with highlights from medical
+% applications,” IEEE Signal Process. Mag., vol. 30, no. 6, pp. 108–119, Nov. 2013.
+% DOI: 10.1109/MSP.2013.2265914
+
 
 
 

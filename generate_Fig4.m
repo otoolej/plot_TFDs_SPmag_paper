@@ -12,9 +12,10 @@
 % Example:
 %     generate_Fig4;
 %
-% [1] B. Boashash, A. Ghazem, J.M. O' Toole, Time-frequency processing of non-stationary
-% signals to aid diagnosis: highlights from medical applications, IEEE Signal Processing
-% Magazine, 2013, in press
+% [1] B. Boashash, G. Azemi, and J.M. O’ Toole, “Time–frequency processing of nonstationary
+% signals: advanced TFD design to aid diagnosis with highlights from medical
+% applications,” IEEE Signal Process. Mag., vol. 30, no. 6, pp. 108–119, Nov. 2013.
+% DOI: 10.1109/MSP.2013.2265914
 
 % John M. O' Toole, University College Cork
 % Started: 10-05-2013
@@ -29,7 +30,7 @@ function []=generate_Fig4
 llimit=0; ulimit=2;
 lower_freq_limit=0; upper_freq_limit=5;
 FONT_TYPE='Times-Roman';
-FONT_SIZE=14;
+FONT_SIZE=16;
 LINE_WIDTH=1.5;
 Ntime=512;
 
@@ -59,6 +60,7 @@ if_law=enhance_harmonics_estIF(x,Fs,Ntime);
 hold on;
 plot(if_law(:,2),if_law(:,1),'w','linewidth',3.5);
 plot(if_law(:,2),if_law(:,1),'r','linewidth',2);
+
 
 
 
